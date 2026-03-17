@@ -1,33 +1,42 @@
-.cat-container{
+.cat-container {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 padding:2em;
 }
 
-.cat-breed{
+.cat-breed {
+    display: flex;
     flex: 1 1 auto;
     margin: 1em;
     padding: 1em;
     border: 1px solid brown;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0.1);
     text-align:center;
     transition: transform 0.3s ease;
 
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 100%;
+    max-width: 100%;
+
+}
+.cat-breed:hover {
+     transform: scale(1.05);
 }
 
-div img{
+div img {
     max-width:100%;
     height: auto;
     border-radius: 8px;
 }
 
-h3{
+h3 {
     margin:0.5em 0;
 
 }
-p{
+p {
     margin: 0.5em 0.1em;
 
 }
